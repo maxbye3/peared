@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peared — Wavy Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-content hero-title">
+        <h1>we're making<br>
+          <span class="highlight"> social</span>
+          <span class="inverse-colors"> fun again</span>
+        </h1>
+        <h2 class="hero-subtitle">Meaningful connections through real events</h2>
+        <div class="hero-cta">
+          <button class="cta-button primary">Join an Event</button>
+          <button class="cta-button secondary">Connect on the app</button>
+        </div>
+      </div>
+      <img class="hero-photo" src="images/istockphoto-505963814-1024x1024.jpg" alt="Friends dancing with bright light streaks">
+      <div class="wavy-bar" aria-hidden="true">
+        <svg viewBox="0 0 1800 220" preserveAspectRatio="none">
+          <defs>
+            <path id="wavePath" pathLength="100" d="M0 110 C 120 50 240 170 360 110 C 480 50 600 170 720 110 C 840 50 960 170 1080 110 C 1200 50 1320 170 1440 110 C 1560 50 1680 170 1800 110 L 1800 220 L 0 220 Z" />
+          </defs>
+          <path class="wave-fill" d="M0 78 C 120 20 240 140 360 78 C 480 20 600 140 720 78 C 840 20 960 140 1080 78 C 1200 20 1320 140 1440 78 C 1560 20 1680 140 1800 78 L 1800 220 L 0 220 Z" />
+          <path class="wave-fill wave-fill-back" d="M0 118 C 120 58 240 178 360 118 C 480 58 600 178 720 118 C 840 58 960 178 1080 118 C 1200 58 1320 178 1440 118 C 1560 58 1680 178 1800 118 L 1800 220 L 0 220 Z" />
+          <text class="wave-text">
+            <textPath href="#wavePath" startOffset="0%" textLength="100%" lengthAdjust="spacingAndGlyphs">
+              <animate attributeName="startOffset" from="0%" to="-20%" dur="18s" repeatCount="indefinite" />
+              ★ real events ★ real people ★ real connections ★ real events ★ real people ★ real connections  
+            </textPath>       
+          </text>
+        </svg>
+      </div>
+    </header>
+  </div>
+</body>
+</html>

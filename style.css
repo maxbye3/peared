@@ -1,0 +1,241 @@
+:root {
+  --ink: #0f0f0f;
+  --paper: #f3f0e4;
+  --tape: #e0d529;
+  --shadow: rgba(0, 0, 0, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Saira", "Futura", "Trebuchet MS", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px 80px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  padding-bottom: 120px;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content,
+.hero-title{
+  position: absolute;
+  top: 30%;
+  left: 52%;
+  transform: translateX(-50%);
+  text-align: right;
+  z-index: 5;
+  pointer-events: none;
+  width: 92%;
+}
+.hero-content h1,
+.hero-title h1{
+  margin:0;
+  font-family:"Bebas Neue","Anton",sans-serif;
+  font-size:clamp(64px,9vw,105px);
+  line-height:1;
+  letter-spacing:0.08em;
+  color:transparent;
+  background:linear-gradient(18deg, #ffffff 0%, #ffffff 45%, #d99607 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-transform:uppercase;
+  transform:scaleY(1.3);
+  text-shadow:#863eea 3px 3px;
+  position:relative;
+}
+
+.hero-content h1 .highlight,
+.hero-title h1 .highlight{
+  color: #dfff00;
+  text-shadow: #863eea 3px 3px;
+}
+
+.hero-content h1 .inverse-colors,
+.hero-title h1 .inverse-colors{
+  color: #e02983;
+  text-shadow: #f7c343 3px 3px;
+}
+
+.hero-content .hero-subtitle,
+.hero-title .hero-subtitle{
+  color: #fff;
+}
+
+.hero-subtitle {
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.hero-content .hero-cta,
+.hero-title .hero-cta{
+  margin-top:12px;
+  display:flex;
+  gap:12px;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  pointer-events:auto;
+}
+.hero-content .cta-button,
+.hero-title .cta-button{
+  border:none;
+  border-radius:999px;
+  padding:10px 18px;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+.cta-button.primary{
+  background:#e02983;
+  color:#fff;
+}
+.cta-button.primary:hover{
+  background:#ff4ba3;
+}
+.cta-button.secondary{
+  background:transparent;
+  color:#dfff00;
+  border:2px solid #dfff00;
+}
+.cta-button:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 12px 24px rgba(0,0,0,0.3);
+}
+.cta-button.secondary:hover{
+  background:#dfff00;
+  color:#0f0f0f;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: -40px;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(0deg,
+      rgba(0,0,0,0.92) 0%,
+      rgba(0,0,0,0.68) 18%,
+      rgba(0,0,0,0.0) 58%),
+    rgba(0,0,0,0.15);
+  z-index:2;
+  pointer-events:none;
+}
+
+.wavy-bar {
+  position: absolute;
+  inset: auto 0 -40px 0;
+  height: 220px;
+  pointer-events: none;
+  filter: drop-shadow(0 14px 18px var(--shadow));
+  z-index: 4;
+}
+
+.wavy-bar svg {
+  width: 200%;
+  height: 100%;
+  display: block;
+}
+
+.wave-fill {
+  fill: #e02983;
+}
+.wave-fill-back {
+  fill: #00B38D;
+}
+
+.wave-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  fill: #f7c343;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+.content {
+  max-width: 960px;
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 540px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 32px 16px 64px;
+  }
+
+  .hero-photo {
+    height: 320px;
+  }
+
+  .wavy-bar {
+    inset: auto 0 -30px 0;
+    height: 200px;
+  }
+
+  .wave-text {
+    font-size: 22px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.28));
+  }
+
+  .content {
+    margin-top: 110px;
+  }
+}
