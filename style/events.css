@@ -20,14 +20,6 @@ body {
   padding: 32px 20px 56px;
 }
 
-.page {
-  width: 100%;
-  max-width: 1120px;
-  background: linear-gradient(180deg, #0b0b0b 0%, #0b0b0b 6%, var(--neon) 6%, var(--neon) 100%);
-  border-radius: 18px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
 
 .event-hero {
   position: relative;
@@ -72,7 +64,7 @@ body {
   font-size: 13px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--neon);
+  color: white;
 }
 
 h1 {
