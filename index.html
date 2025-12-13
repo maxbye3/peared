@@ -9,32 +9,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/events.css">
   <link rel="stylesheet" href="style/deals.css">
+  <link rel="stylesheet" href="style/app.css">
 </head>
 
 <body>
   <div class="page">
-    <header class="hero">
+    
+    <!-- HEADER -->
+    <header class="header-hero">
       <div class="top-bar">
         <span class="top-bar-filler"></span>
         <a class="top-bar-link" href="#">Work with <span class="accent-peared">Peared</span></a>
       </div>
-      <div class="hero-content hero-title">
+      <div class="header-hero-content header-hero-title">
         <h1>get
           <span> peared</span>
           up
         </h1>
-        <h2 class="hero-subtitle">Meaningful connections through real events.</h2>
-        <h2 class="hero-alt-subtitle">We're making dating fun again.</h2>
-        <div class="hero-cta">
+        <h2 class="header-hero-subtitle">Meaningful connections through real events.</h2>
+        <h2 class="header-hero-alt-subtitle">We're making dating fun again.</h2>
+        <div class="header-hero-cta">
           <button class="cta-button primary">Join an Event</button>
           <button class="cta-button tertiary">Peared deals</button>
           <button class="cta-button secondary">Connect on the app</button>
         </div>
       </div>
-      <img class="hero-photo" src="images/istockphoto-505963814-1024x1024.jpg"
+      <img class="header-hero-photo" src="images/istockphoto-505963814-1024x1024.jpg"
         alt="Friends dancing with bright light streaks">
       <div class="wavy-bar" aria-hidden="true">
         <svg viewBox="0 0 1800 220" preserveAspectRatio="none">
@@ -56,56 +60,167 @@
 
       </div>
     </header>
+    <!-- header -->
+    <!-- EVENTS -->
     <section id="events">
 
-      <!-- EVENTS -->
-    <header class="event-hero">
-    <p class="eyebrow">Peared Events</p>
-    <h1>Find your next connection IRL</h1>
-    <p class="lead">Curated socials with music, energy, and people who actually show up. <br>Save your spot and see who else is going.</p>
-    </header>
+      <header class="event-hero">
+        <p class="eyebrow">Peared Events</p>
+        <h2>Find your next connection IRL</h2>
+        <p class="lead">Curated socials with music, energy, and people who actually show up. <br>Save your spot and see
+          who else is going.</p>
+      </header>
 
-    <section class="events-grid">
-      <article class="event-card">
-                  <!-- <div class="event-flag fast">Last Spots</div> -->
-       
-        <div class="event-date">
-          <span class="event-month">Dec</span>
-          <span class="event-day">09</span>
-          <span class="event-weekday">Tue</span>
+      <section class="events-grid">
+        <article class="event-card">
+          <!-- <div class="event-flag fast">Last Spots</div> -->
+
+          <div class="event-date">
+            <span class="event-month">Dec</span>
+            <span class="event-day">09</span>
+            <span class="event-weekday">Tue</span>
+          </div>
+          <img class="event-thumb"
+            src="https://cdn.prod.website-files.com/67a4a46056cb6e3cc73e8d19/69162695cd958633310a688b_DSC05843-p-1600.jpg"
+            alt="Crowd dancing at a salsa social">
+          <div class="event-body">
+
+            <h3 class="event-title">Noche de Salsa Singles Social</h3>
+
+            <p class="event-desc">Get ready for a night of rhythm, new connection, and fun — join Peared for Noche de
+              Salsa at Casta’s Bodega!</p>
+            <div class="event-meta">6:30–9pm • Seattle, WA</div>
+          </div>
+          <a class="event-cta" href="#" disabled>Finished</a>
+        </article>
+
+        <article class="event-card">
+          <div class="event-flag last">Selling Fast</div>
+          <div class="event-date">
+            <span class="event-month">Dec</span>
+            <span class="event-day">14</span>
+            <span class="event-weekday">Sun</span>
+          </div>
+          <img class="event-thumb"
+            src="https://cdn.prod.website-files.com/67a4a46056cb6e3cc73e8d19/69370f9724457477822bb761_Ice%20Rink%202%20HR-p-2600.jpg"
+            alt="People mingling at a cocktail event">
+          <div class="event-body">
+            <h3 class="event-title">Rooftop Mix &amp; Mingle</h3>
+            <p class="event-desc">Sunset cocktails, DJ grooves, and curated intros to make meeting new people feel
+              effortless.</p>
+            <div class="event-meta">7–10pm • Portland, OR</div>
+          </div>
+          <a class="event-cta ghost" href="#">Waitlist</a>
+        </article>
+      </section>
+      <!-- events -->
+
+      <!-- DEALS -->
+      <section class="deals-section" id="deals">
+        <div class="deals-inner">
+          <div class="deals-head">
+            <p class="eyebrow">Peared Perks</p>
+            <h2>Deals made for dates</h2>
+            <p class="lead">Hand-picked perks across food, music, and nights out so you can show up with something
+              extra.</p>
+          </div>
+
+          <div class="deals-grid">
+            <article class="deal-card">
+              <div class="deal-media">
+                <span class="perk-label">Free Item</span>
+                <img class="deal-thumb"
+                  src="images/date-night.jpg"
+                  alt="Champagne poured at a bar">
+              </div>
+              <div class="deal-body">
+                <h3 class="deal-title">Date Night at Casta's at Bodega</h3>
+                <p class="deal-desc">Free glass of champagne for you + your date at Casta's at Bodega when you show the
+                  Peared deal. No reservation needed.</p>
+                <div class="deal-tags">
+                  <span class="deal-tag">Food &amp; Drink</span>
+                </div>
+                <div class="deal-meta-line">
+                  <span><strong>Redemption:</strong> Mention Peared at check-in.</span>
+                  <span><strong>Restrictions:</strong> Walk-ins welcome; subject to availability.</span>
+                </div>
+                <a class="deal-cta" href="#">Redeem Perk</a>
+              </div>
+            </article>
+
+            <article class="deal-card">
+              <div class="deal-media">
+                <span class="perk-label">Exclusive Access</span>
+                <img class="deal-thumb"
+                  src="images/jazz-nights.jpg"
+                  alt="Jazz musicians performing on stage">
+              </div>
+              <div class="deal-body">
+                <h3 class="deal-title">Tuesday Jazz Nights at Ciel Downtown</h3>
+                <p class="deal-desc">2 free jazz tickets for Ciel Downtown Tuesday Jazz nights using code “PEAREDPERKS.”
+                  Includes a complimentary glass of champagne on arrival.</p>
+                <div class="deal-tags">
+                  <span class="deal-tag">Music &amp; Nightlife</span>
+                  <span class="deal-tag">Food &amp; Drink</span>
+                  <span class="deal-tag">First Date</span>
+                  <span class="deal-tag">Romantic</span>
+                </div>
+                <div class="deal-price"><s>$20</s> $0 with code PEAREDPERKS</div>
+                <div class="deal-meta-line">
+                  <span><strong>Redemption:</strong> Use code at booking or show at check-in.</span>
+                  <span><strong>Restrictions:</strong> Tuesdays 6:30–9pm; limited availability; rooftop lounge.</span>
+                </div>
+                <a class="deal-cta" href="#">Redeem Perk</a>
+              </div>
+            </article>
+          </div>
         </div>
-        <img class="event-thumb" src="https://cdn.prod.website-files.com/67a4a46056cb6e3cc73e8d19/69162695cd958633310a688b_DSC05843-p-1600.jpg" alt="Crowd dancing at a salsa social">
-        <div class="event-body">
-
-          <h3 class="event-title">Noche de Salsa Singles Social</h3> 
-
-          <p class="event-desc">Get ready for a night of rhythm, new connection, and fun — join Peared for Noche de Salsa at Casta’s Bodega!</p>
-          <div class="event-meta">6:30–9pm • Seattle, WA</div>
+      </section>
+      <!-- deals -->
+      <!-- APP -->
+      <section class="app-card-container">
+        <div class="app-ribbon" aria-hidden="true">
+          <div class="app-ribbon-track">
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+            <span>AVAILABLE NOW ON IOS AND ANDROID.</span>
+          </div>
         </div>
-        <a class="event-cta" href="#" disabled>Finished</a>
-      </article>
 
-      <article class="event-card">
-        <div class="event-flag last">Selling Fast</div>
-        <div class="event-date">
-          <span class="event-month">Dec</span>
-          <span class="event-day">14</span>
-          <span class="event-weekday">Sun</span>
-        </div>
-        <img class="event-thumb" src="https://cdn.prod.website-files.com/67a4a46056cb6e3cc73e8d19/69370f9724457477822bb761_Ice%20Rink%202%20HR-p-2600.jpg" alt="People mingling at a cocktail event">
-        <div class="event-body">
-          <h3 class="event-title">Rooftop Mix &amp; Mingle</h3>
-          <p class="event-desc">Sunset cocktails, DJ grooves, and curated intros to make meeting new people feel effortless.</p>
-          <div class="event-meta">7–10pm • Portland, OR</div>
-        </div>
-        <a class="event-cta ghost" href="#">Waitlist</a>
-      </article>
-    </section>
-    <!-- events -->
+        <main class="app-hero">
+          <section class="app-col-left">
+            <div class="app-phone">
+              <img class="app-phone-img"
+                src="images/phone-app.jpeg"
+                alt="Founder portrait in phone">
+              <!-- <div class="app-play-button" aria-hidden="true">▶</div> -->
+            </div>
+          </section>
 
-    <!-- DEALS -->
+          <section class="app-col-right">
+            <div class="app-intro">Not just another dating app</div>
 
-    <!-- deals -->
+            <div class="app-name-wrap">
+              <h3 class="app-last">
+                Connect with the others who came to the events and share similar interests
+              </h3>
+            </div>
+
+            <div class="app-store-buttons">
+              <a href="#" aria-label="Download on the App Store">
+                <img src="images/app-store.png" alt="Download on the App Store">
+              </a>
+              <a href="#" aria-label="Get it on Google Play">
+                <img src="images/google-play.png" alt="Get it on Google Play">
+              </a>
+            </div>
+          </section>
+        </main>
+      </section>
+      <!-- app -->
 
   </div>
 </body>

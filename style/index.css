@@ -1,0 +1,20 @@
+:root {
+  --secondary: #e863a4;
+  --dark: #0f0f0f;
+  --muted: #222;
+  --primary: #dfff06;
+  --white: #fff;
+  --paper: #f3f0e4;
+}
+
+.page{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--paper);
+  color: var(--muted);
+}
